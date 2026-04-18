@@ -1,7 +1,13 @@
 ![Threat Hunt Cover](Cover.png)
 
+<br>
 
 # 🛡️ Threat Hunt Report – Business Email Compromise (BEC)
+
+## 📌 Project Overview
+This investigation analyzes a Business Email Compromise (BEC) attack within a Microsoft 365 environment using Microsoft Sentinel. The attacker leveraged valid credentials and MFA fatigue to gain access, establish persistence via inbox rules, and conduct post-compromise activity across cloud services.
+
+The objective of this threat hunt was to reconstruct the attacker’s activity, identify detection gaps, and map behaviors to MITRE ATT&CK techniques.
 
 ---
 
@@ -302,14 +308,14 @@ Figure 8: Sign-in logs showing Conditional Access policies were not applied duri
 ## 🚨 Detection Gaps & Recommendations
 
 ### Gaps
-• Conditional Access policies were not enforced (status: notApplied)
-• Lack of MFA fatigue detection allowed attacker approval attempts
+• Conditional Access policies were not enforced (status: notApplied)  
+• Lack of MFA fatigue detection allowed attacker approval attempts  
 • No alerting on suspicious inbox rule creation (New-InboxRule)  
 
 ### Recommendations
-• Enforce Conditional Access policies (block legacy auth, require MFA for all cloud apps, restrict foreign logins)
-• Enable MFA number matching and user reporting to prevent fatigue attacks
-• Configure alerts for inbox rule creation and external forwarding
+• Enforce Conditional Access policies (block legacy auth, require MFA for all cloud apps, restrict foreign logins)  
+• Enable MFA number matching and user reporting to prevent fatigue attacks  
+• Configure alerts for inbox rule creation and external forwarding  
 • Implement sign-in risk policies for impossible travel and anomalous IPs  
 
 ---
