@@ -53,24 +53,26 @@ Following access, the attacker established persistence through malicious inbox r
 
 ## 🧠 Hunt Overview
 
-1. Credentials stolen via infostealer malware  
-2. Successful login from suspicious IP  
-3. MFA fatigue used to gain access  
-4. Inbox rules created for persistence  
-5. OneDrive accessed  
-6. SharePoint accessed  
-7. BEC email sent  
+1. Credentials compromised via infostealer malware  
+2. Suspicious login from foreign IP (Netherlands)  
+3. MFA fatigue attack used to gain account access  
+4. Malicious inbox rule created for persistence  
+5. OneDrive accessed for potential data discovery  
+6. SharePoint accessed indicating broader cloud exploration  
+7. BEC email sent attempting financial fraud  
 
 ---
 
 ## 🧬 MITRE ATT&CK Summary
 
-| Technique | MITRE ID |
-|----------|---------|
-| Valid Accounts | T1078 |
-| MFA Fatigue | T1621 |
-| Account Manipulation | T1098 |
-| Email Rule Evasion | T1564.008 |
+| Tactic | Technique | ID |
+|------|----------|----|
+| Initial Access | Valid Accounts | T1078 |
+| Credential Access | Unsecured Credentials (Infostealer) | T1555 |
+| Persistence | Inbox Rule | T1098 |
+| Discovery | Cloud Account Activity | T1087 |
+| Collection | Data from Cloud Storage | T1530 |
+| Exfiltration / Impact | BEC / Phishing | T1566 |
 
 ---
 
