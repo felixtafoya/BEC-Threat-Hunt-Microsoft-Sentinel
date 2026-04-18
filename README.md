@@ -2,7 +2,7 @@
 
 <br>
 
-# 🛡️ Threat Hunt Report – Business Email Compromise (BEC)
+# 🛡️ Threat Hunt Report – SCATTERED INVOICE (Business Email Compromise)
 
 ## 📌 Project Overview
 This investigation analyzes a Business Email Compromise (BEC) attack within a Microsoft 365 environment using Microsoft Sentinel. The attacker leveraged valid credentials and MFA fatigue to gain access, establish persistence via inbox rules, and conduct post-compromise activity across cloud services.
