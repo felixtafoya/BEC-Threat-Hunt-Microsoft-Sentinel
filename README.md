@@ -1,6 +1,5 @@
-<p align="center">
-  <img src="PUT-YOUR-COVER-IMAGE-HERE" width="1200" alt="Threat Hunt Cover"/>
-</p>
+![Threat Hunt Cover](Cover.png)
+
 
 # 🛡️ Threat Hunt Report – Business Email Compromise (BEC)
 
